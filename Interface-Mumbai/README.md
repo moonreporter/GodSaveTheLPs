@@ -30,20 +30,20 @@ LP Token created:
 * Solar/WMATIC at 0x56935b828d7d3d1d14c87919b860639a61a4dfd0
 
 ## Areas to work on to change network:
-"src/pages/api/farms.js" (specify the correct erc20 tokens - farms.js, prices.js)
-"src/pages/api/prices.js"
-"src/connectors/index.ts" (Change "defaultChainId", "supportedChainIds", rpc for walletconnect) 
-"src/constants/chains.ts" (Change "SupportedChainId")
-"src/constants/token-lists/solarbeam.tokenlist.json" (Change "chainId", token "address")
-"src/pages/locker/create/index.tsx" (Change 1285 of "{LOCKER_ADDRESS[chainId || 1285]}")
+* "src/pages/api/farms.js" (specify the correct erc20 tokens - farms.js, prices.js)
+* "src/pages/api/prices.js"
+* "src/connectors/index.ts" (Change "defaultChainId", "supportedChainIds", rpc for walletconnect) 
+* "src/constants/chains.ts" (Change "SupportedChainId")
+* "src/constants/token-lists/solarbeam.tokenlist.json" (Change "chainId", token "address")
+* "src/pages/locker/create/index.tsx" (Change 1285 of "{LOCKER_ADDRESS[chainId || 1285]}")
 
 ## Areas to work on to change token contracts:
-"src/constants/farms.ts" (Change pool addresses)
-"src/pages/api/farms.js" (Change distributorContract to new deployed address)
-"src/pages/api/prices.js" (Change contracts to new deployed addresses)
-"src/constants/multicall/index.ts" (Change multicall address)
-"src/constants/tokens/index.ts" (Add your network's addresses and native token)
-"src/constants/addresses.ts" (Add your network's addresses and native token) (SOLAR_VAULT_ADDRESS did not exist have to recheck)
-"src/constants/farms.ts" (Change the farm pools but I am unsure of the token0, token1 and id what they mean)
-"src/constants/vaults.ts" (Change to new vault contracts)
-"src/constants/routing.ts" (Change FACTORY_ADDRESS, ROUTER_ADDRESS, INIT_CODE_HASH)
+* "src/constants/farms.ts" (Change pool addresses)
+* "src/pages/api/farms.js" (Change distributorContract to new deployed address)
+* "src/pages/api/prices.js" (Change contracts to new deployed addresses)
+* "src/constants/multicall/index.ts" (Change multicall address)
+* "src/constants/tokens/index.ts" (Add your network's addresses and native token)
+* "src/constants/addresses.ts" (Add your network's addresses and native token) (SOLAR_VAULT_ADDRESS did not exist have to recheck)
+* "src/constants/farms.ts" (Change the farm pools but I am unsure of the token0, token1 and id what they mean)
+* "src/constants/vaults.ts" (Change to new vault contracts)
+* "src/constants/routing.ts" (Change FACTORY_ADDRESS, ROUTER_ADDRESS, INIT_CODE_HASH)
