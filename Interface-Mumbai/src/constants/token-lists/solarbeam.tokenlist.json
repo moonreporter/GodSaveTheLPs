@@ -1,0 +1,49 @@
+{
+  "name": "Solarbeam List",
+  "timestamp": "2021-07-15T12:15:29.993Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tags": {},
+  "logoURI": "https://raw.githubusercontent.com/sushiswap/art/master/sushi/logo-256x256.png",
+  "keywords": [
+    "sushiswap",
+    "default"
+  ],
+  "tokens": [
+    {
+      "name": "Solarbeam Token",
+      "address": "0x740bbb10512409d52b1e861189af79236aec5201",
+      "symbol": "SOLAR",
+      "decimals": 18,
+      "chainId": 80001,
+      "logoURI": "http://solarbeam.io/icon.png"
+    },
+    {
+      "name": "Wrapped MATIC",
+      "address": "0x9c3C9283D3e44854697Cd22D3Faa240Cfb032889",
+      "symbol": "WMATIC",
+      "decimals": 18,
+      "chainId": 80001,
+      "logoURI": "https://solarbeam.io/images/tokens/matic.png"
+    },
+    {
+      "name": "USDC Test Coin",
+      "address": "0x0636617c67cb84d49c1417f641629db7d8c065ba",
+      "symbol": "USDCt",
+      "decimals": 18,
+      "chainId": 80001,
+      "logoURI": "https://solarbeam.io/images/tokens/usdc.png"
+    },
+    {
+      "name": "SHIBA INU Test Token",
+      "address": "0xD7C5BB823bB5E4D6581605B057c92486D1f5CE6a",
+      "symbol": "SHIBt",
+      "decimals": 18,
+      "chainId": 80001,
+      "logoURI": "https://solarbeam.io/images/tokens/movr.png"
+    }
+  ]
+}
