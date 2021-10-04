@@ -37,17 +37,17 @@ export default function Pool() {
 
   // fetch the user's balances of all tracked V2 LP tokens
   const trackedTokenPairs = useTrackedTokenPairs()
-
+  // console.log(trackedTokenPairs) // This appears fine
   const tokenPairsWithLiquidityTokens = useMemo(() => {
     if (!chainId) {
       return []
     }
     return trackedTokenPairs.map((tokens) => ({
-      liquidityToken: toV2LiquidityToken(tokens),
+      liquidityToken: toV2LiquidityToken(tokens), // <--- Issue is highlighted at toV2LiquidityToken()
       tokens,
     }))
   }, [trackedTokenPairs, chainId])
-
+  // console.log(tokenPairsWithLiquidityTokens)
   const liquidityTokens = useMemo(
     () => tokenPairsWithLiquidityTokens.map((tpwlt) => tpwlt.liquidityToken),
     [tokenPairsWithLiquidityTokens]
@@ -60,7 +60,7 @@ export default function Pool() {
   // fetch the reserves for all V2 pools in which the user has a balance
   const liquidityTokensWithBalances = useMemo(
     () =>
-      tokenPairsWithLiquidityTokens.filter(({ liquidityToken }) =>
+      tokenPairsWithLiquidityTokens.filter(({ liquidityToken }) =>  // 1||
         v2PairsBalances[liquidityToken?.address]?.greaterThan('0')
       ),
     [tokenPairsWithLiquidityTokens, v2PairsBalances]
@@ -72,8 +72,9 @@ export default function Pool() {
 
   const allV2PairsWithLiquidity = v2Pairs.map(([, pair]) => pair).filter((v2Pair): v2Pair is Pair => Boolean(v2Pair))
 
-  console.log('v2Pairs');
-  console.log(v2Pairs);
+  // console.log('v2Pairs');
+  // console.log(v2Pairs);
+  // console.log(liquidityTokensWithBalances);
   // TODO: Replicate this!
   // show liquidity even if its deposited in rewards contract
   // const stakingInfo = useStakingInfo()

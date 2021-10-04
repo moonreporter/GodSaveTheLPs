@@ -49,5 +49,22 @@ export const POOLS: AddressMap = {
         decimals: 18,
       },
     },
+    '0x0b3e28Dc53d9E8E870014b36aF54FF9CF45De7Ab': {
+      id: 2,
+      token0: {
+        id: '0x740bBb10512409d52b1e861189AF79236aeC5201',
+        name: 'Solarbeam',
+        symbol: 'SOLAR',
+        decimals: 18,
+      },
+      token1: {
+        id: '0x0636617c67CB84D49C1417F641629Db7d8c065BA',
+        name: 'USDC Test Coin',
+        symbol: 'USDCt',
+        decimals: 18,
+      },
+      name: 'Solarbeam LP',
+      symbol: 'SLP',
+    },
   },
 }

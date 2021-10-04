@@ -28,27 +28,5 @@ Wrapped Matic Contract (ERC20 Version):
 LP Token created:
 * USDCt/WMATIC at 0xd4f3a200bbd8d105faed6e8ed995f8a12ad4e276
 * Solar/WMATIC at 0x56935b828d7d3d1d14c87919b860639a61a4dfd0
-
-## Areas to work on to change network & deployed contracts:
-* "src/pages/api/farms.js" (specify the correct erc20 tokens - farms.js, prices.js)
-* "src/pages/api/prices.js"
-* "src/connectors/index.ts" (Change "defaultChainId", "supportedChainIds", rpc for walletconnect) 
-* "src/constants/chains.ts" (Change "SupportedChainId")
-* "src/constants/token-lists/solarbeam.tokenlist.json" (Change "chainId", token "address")
-* "src/pages/locker/create/index.tsx" (Change 1285 of "{LOCKER_ADDRESS[chainId || 1285]}")
-* "src/constants/farms.ts" (Change pool addresses)
-* "src/pages/api/farms.js" (Change distributorContract to new deployed address)
-* "src/pages/api/prices.js" (Change contracts to new deployed addresses)
-* "src/constants/multicall/index.ts" (Change multicall address)
-* "src/constants/tokens/index.ts" (Add your network's addresses and native token)
-* "src/constants/addresses.ts" (Add your network's addresses and native token) (SOLAR_VAULT_ADDRESS did not exist have to recheck)
-* "src/constants/farms.ts" (Change the farm pools but I am unsure of the token0, token1 and id what they mean)
-* "src/constants/vaults.ts" (Change to new vault contracts)
-* "src/constants/routing.ts" (Change FACTORY_ADDRESS, ROUTER_ADDRESS, INIT_CODE_HASH)
-* "/src/hooks/useV2Pairs.ts" (Change Chainid from "ChainId.MOONRIVER" to "ChainId.MATIC_TESTNET")
-* "/src/sdk/constants/addresses.ts" (Include FACTORY_ADDRESS, and ROUTER_ADDRESS)
-* "/src/modals/NetworkModal/index.tsx" (Include Matic Testnet. Important note chainId: '0x13881'//MAKE SURE THIS IS IN HEXADECIMAL SO USE A DECIMAL TO HEXIDECIMAL CONVERTER)
-* "/src/components/Web3ReactManager/index.tsx" (Change "ChainId.MOONRIVER" to "ChainId.MATIC_TESTNET". Prevented wrong Network triggering)
-* "/src/components/CurrencyLogo/index.tsx" (Include "[ChainId.MATIC_TESTNET]: 'matic testnet',")
-* "/src/components/Header/index.tsx" (Change Chainid from "ChainId.MOONRIVER" to "ChainId.MATIC_TESTNET")
-* "/src/components/TokenStats/index.tsx" (Change Chainid from "ChainId.MOONRIVER" to "ChainId.MATIC_TESTNET", replace Solar token address)
+* Solar/USDCt at 0x0b3e28Dc53d9E8E870014b36aF54FF9CF45De7Ab
+* SHIBtest/USDCt at 0xea54270e1986da2db041f87a58f4996d27b2b616

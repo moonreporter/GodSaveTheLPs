@@ -227,10 +227,11 @@ export function useURLWarningToggle(): () => void {
  * @param tokenB the other token
  */
 export function toV2LiquidityToken([tokenA, tokenB]: [Token, Token]): Token {
+  console.log(tokenA.chainId)
   return tokenA && tokenB && tokenA.chainId === tokenB.chainId && FACTORY_ADDRESS[tokenA.chainId]
     ? new Token(
         tokenA.chainId,
-        computePairAddress({ factoryAddress: FACTORY_ADDRESS[tokenA.chainId], tokenA, tokenB }),
+        computePairAddress({ factoryAddress: FACTORY_ADDRESS[tokenA.chainId], tokenA, tokenB }), //<-- Main culprit is compute pair address
         18,
         'UNI-V2',
         'Uniswap V2'
@@ -244,7 +245,6 @@ export function toV2LiquidityToken([tokenA, tokenB]: [Token, Token]): Token {
 export function useTrackedTokenPairs(): [Token, Token][] {
   const { chainId } = useActiveWeb3React()
   const tokens = useAllTokens()
-
 
   // pairs for every token against every base
   const generatedPairs: [Token, Token][] = useMemo(
