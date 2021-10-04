@@ -29,15 +29,13 @@ LP Token created:
 * USDCt/WMATIC at 0xd4f3a200bbd8d105faed6e8ed995f8a12ad4e276
 * Solar/WMATIC at 0x56935b828d7d3d1d14c87919b860639a61a4dfd0
 
-## Areas to work on to change network:
+## Areas to work on to change network & deployed contracts:
 * "src/pages/api/farms.js" (specify the correct erc20 tokens - farms.js, prices.js)
 * "src/pages/api/prices.js"
 * "src/connectors/index.ts" (Change "defaultChainId", "supportedChainIds", rpc for walletconnect) 
 * "src/constants/chains.ts" (Change "SupportedChainId")
 * "src/constants/token-lists/solarbeam.tokenlist.json" (Change "chainId", token "address")
 * "src/pages/locker/create/index.tsx" (Change 1285 of "{LOCKER_ADDRESS[chainId || 1285]}")
-
-## Areas to work on to change token contracts:
 * "src/constants/farms.ts" (Change pool addresses)
 * "src/pages/api/farms.js" (Change distributorContract to new deployed address)
 * "src/pages/api/prices.js" (Change contracts to new deployed addresses)
