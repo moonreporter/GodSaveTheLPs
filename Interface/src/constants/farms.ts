@@ -23,7 +23,7 @@ type AddressMap = {
 
 export const POOLS: AddressMap = {
   [ChainId.MATIC_TESTNET]: {
-    '0xd4f3a200bbd8d105faed6e8ed995f8a12ad4e276': {
+    '0x56935b828d7D3D1D14C87919B860639A61a4dFd0': {
       id: 0,
       token0: {
         id: '0x740bBb10512409d52b1e861189AF79236aeC5201',
@@ -40,17 +40,8 @@ export const POOLS: AddressMap = {
       name: 'Solarbeam LP',
       symbol: 'SLP',
     },
-    '0x740bBb10512409d52b1e861189AF79236aeC5201': {
-      id: 1,
-      token0: {
-        id: '0x740bBb10512409d52b1e861189AF79236aeC5201',
-        name: 'Solarbeam',
-        symbol: 'SOLAR',
-        decimals: 18,
-      },
-    },
     '0x0b3e28Dc53d9E8E870014b36aF54FF9CF45De7Ab': {
-      id: 2,
+      id: 1,
       token0: {
         id: '0x740bBb10512409d52b1e861189AF79236aeC5201',
         name: 'Solarbeam',

@@ -18,7 +18,7 @@ const FarmList = ({ farms, term, filter }) => {
   const singlePools = items.filter((i) => i.pair.token1).sort((a, b) => b.allocPoint - a.allocPoint)
   const liquidityPools = items.filter((i) => !i.pair.token1).sort((a, b) => b.allocPoint - a.allocPoint)
   const pools = singlePools.concat(liquidityPools)
-
+  console.log(pools)
   return isBeefy ? (
     <div className="w-full py-6 text-center">{i18n._(t`Soon`)}</div>
   ) : items ? (

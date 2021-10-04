@@ -8,7 +8,7 @@ export default async function handler(req, res) {
   let movrUSDCContract = new web3.eth.Contract(IUniswapV2PairABI, '0xd4f3a200BBD8D105fAED6E8ED995F8a12ad4e276') // This is like MaticUSDtest pair contract
   const movrUSDCReserves = await movrUSDCContract.methods.getReserves().call()
 
-  const movrUSDCPrice = (Number(movrUSDCReserves.reserve1) / Number(movrUSDCReserves.reserve0) ) * 1e12
+  const movrUSDCPrice = (Number(movrUSDCReserves.reserve1) / Number(movrUSDCReserves.reserve0) ) // * 1e12 <--TO ONLY INCLUDE IF IT IS REAL USDC with 6 decimals
 
   let solarMovrContract = new web3.eth.Contract(IUniswapV2PairABI, '0x56935b828d7d3d1d14c87919b860639a61a4dfd0') // This is like MaticSolar pair contract
   const solarMovrReserves = await solarMovrContract.methods.getReserves().call()
