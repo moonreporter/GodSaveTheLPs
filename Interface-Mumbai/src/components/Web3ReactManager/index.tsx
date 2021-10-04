@@ -40,7 +40,7 @@ export default function Web3ReactManager({ children }: { children: JSX.Element }
     if (window && window.ethereum) {
       const provider: any = window.ethereum
 
-      const params = SUPPORTED_NETWORKS[ChainId.MOONRIVER]
+      const params = SUPPORTED_NETWORKS[ChainId.MATIC_TESTNET] // Change this
 
       if (provider) {
         try {

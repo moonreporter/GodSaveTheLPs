@@ -17,6 +17,7 @@ const BLOCKCHAIN = {
   [ChainId.MATIC]: 'polygon',
   [ChainId.XDAI]: 'xdai',
   [ChainId.MOONRIVER]: 'moonriver',
+  [ChainId.MATIC_TESTNET]: 'matic testnet',
   // [ChainId.OKEX]: 'okex',
 }
 

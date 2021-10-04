@@ -82,8 +82,8 @@ export function useVaultTVL(): TVLInfo[] {
   const movrPrice = priceData?.data?.['movr']
   const ribPrice = priceData?.data?.['rib']
 
-  const farmingPools = Object.keys(VAULTS[ChainId.MOONRIVER]).map((key) => {
-    return { ...VAULTS[ChainId.MOONRIVER][key] }
+  const farmingPools = Object.keys(VAULTS[ChainId.MATIC_TESTNET]).map((key) => {
+    return { ...VAULTS[ChainId.MATIC_TESTNET][key] }
   })
 
   const singlePools = farmingPools.filter((r) => !r.token1)
@@ -94,10 +94,10 @@ export function useVaultTVL(): TVLInfo[] {
   const results = useMultipleContractSingleData(pairAddresses, PAIR_INTERFACE, 'getReserves')
   const totalSupply = useMultipleContractSingleData(pairAddresses, PAIR_INTERFACE, 'totalSupply')
   const distributorBalance = useMultipleContractSingleData(pairAddresses, PAIR_INTERFACE, 'balanceOf', [
-    SOLAR_VAULT_ADDRESS[ChainId.MOONRIVER],
+    SOLAR_VAULT_ADDRESS[ChainId.MATIC_TESTNET],
   ])
   const distributorBalanceSingle = useMultipleContractSingleData(singleAddresses, PAIR_INTERFACE, 'balanceOf', [
-    SOLAR_VAULT_ADDRESS[ChainId.MOONRIVER],
+    SOLAR_VAULT_ADDRESS[ChainId.MATIC_TESTNET],
   ])
 
   return useMemo(() => {
@@ -215,8 +215,8 @@ export function useTVL(): TVLInfo[] {
   const movrPrice = priceData?.data?.['movr']
   const ribPrice = priceData?.data?.['rib']
 
-  const farmingPools = Object.keys(POOLS[ChainId.MOONRIVER]).map((key) => {
-    return { ...POOLS[ChainId.MOONRIVER][key], lpToken: key }
+  const farmingPools = Object.keys(POOLS[ChainId.MATIC_TESTNET]).map((key) => {
+    return { ...POOLS[ChainId.MATIC_TESTNET][key], lpToken: key }
   })
 
   const singlePools = farmingPools.filter((r) => !r.token1)
@@ -227,10 +227,10 @@ export function useTVL(): TVLInfo[] {
   const results = useMultipleContractSingleData(pairAddresses, PAIR_INTERFACE, 'getReserves')
   const totalSupply = useMultipleContractSingleData(pairAddresses, PAIR_INTERFACE, 'totalSupply')
   const distributorBalance = useMultipleContractSingleData(pairAddresses, PAIR_INTERFACE, 'balanceOf', [
-    SOLAR_DISTRIBUTOR_ADDRESS[ChainId.MOONRIVER],
+    SOLAR_DISTRIBUTOR_ADDRESS[ChainId.MATIC_TESTNET],
   ])
   const distributorBalanceSingle = useMultipleContractSingleData(singleAddresses, PAIR_INTERFACE, 'balanceOf', [
-    SOLAR_DISTRIBUTOR_ADDRESS[ChainId.MOONRIVER],
+    SOLAR_DISTRIBUTOR_ADDRESS[ChainId.MATIC_TESTNET],
   ])
 
   return useMemo(() => {
@@ -239,7 +239,7 @@ export function useTVL(): TVLInfo[] {
         token.id.toLowerCase() == SOLAR_ADDRESS[chainId].toLowerCase() ||
         token.symbol == 'WMOVR' ||
         token.symbol == 'MOVR' ||
-        token.symbol == 'RIB' ||
+        token.symbol == 'SOLAR' ||
         token.symbol == 'USDC' ||
         token.symbol == 'BUSD'
       )

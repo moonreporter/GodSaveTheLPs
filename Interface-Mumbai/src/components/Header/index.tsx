@@ -44,7 +44,7 @@ function AppBar(): JSX.Element {
                           {i18n._(t`Pool`)}
                         </a>
                       </NavLink>
-                      {chainId && [ChainId.MOONRIVER].includes(chainId) && (
+                      {chainId && [ChainId.MATIC_TESTNET].includes(chainId) && (
                         <NavLink href={'/farm'}>
                           <a
                             id={`farm-nav-link`}
@@ -54,7 +54,7 @@ function AppBar(): JSX.Element {
                           </a>
                         </NavLink>
                       )}
-                      {chainId && [ChainId.MOONRIVER].includes(chainId) && (
+                      {chainId && [ChainId.MATIC_TESTNET].includes(chainId) && (
                         <NavLink href={'/vaults'}>
                           <a
                             id={`vaults-nav-link`}
@@ -64,7 +64,7 @@ function AppBar(): JSX.Element {
                           </a>
                         </NavLink>
                       )}
-                      {chainId && [ChainId.MOONRIVER].includes(chainId) && (
+                      {chainId && [ChainId.MATIC_TESTNET].includes(chainId) && (
                         <NavLink href={'/locker'}>
                           <a
                             id={`farm-nav-link`}
@@ -74,7 +74,7 @@ function AppBar(): JSX.Element {
                           </a>
                         </NavLink>
                       )}
-                      {chainId && [ChainId.MOONRIVER].includes(chainId) && (
+                      {chainId && [ChainId.MATIC_TESTNET].includes(chainId) && (
                         <NavLink href={'https://movr.anyswap.exchange/#/bridge'}>
                           <a
                             target="_blank"
@@ -84,7 +84,7 @@ function AppBar(): JSX.Element {
                           </a>
                         </NavLink>
                       )}
-                      {chainId && [ChainId.MOONRIVER].includes(chainId) && (
+                      {chainId && [ChainId.MATIC_TESTNET].includes(chainId) && (
                         <NavLink href={'/nft/launchpad'}>
                           <a
                             id={`nft-nav-link`}
@@ -178,7 +178,7 @@ function AppBar(): JSX.Element {
                   </a>
                 </Link>
 
-                {chainId && [ChainId.MOONRIVER].includes(chainId) && (
+                {chainId && [ChainId.MATIC_TESTNET].includes(chainId) && (
                   <Link href={'/farm'}>
                     <a
                       id={`farm-nav-link`}
@@ -188,7 +188,7 @@ function AppBar(): JSX.Element {
                     </a>
                   </Link>
                 )}
-                {chainId && [ChainId.MOONRIVER].includes(chainId) && (
+                {chainId && [ChainId.MATIC_TESTNET].includes(chainId) && (
                   <Link href={'/vaults'}>
                     <a
                       id={`vaults-nav-link`}
@@ -198,7 +198,7 @@ function AppBar(): JSX.Element {
                     </a>
                   </Link>
                 )}
-                {chainId && [ChainId.MOONRIVER].includes(chainId) && (
+                {chainId && [ChainId.MATIC_TESTNET].includes(chainId) && (
                   <Link href={'/locker'}>
                     <a
                       id={`farm-nav-link`}
@@ -208,7 +208,7 @@ function AppBar(): JSX.Element {
                     </a>
                   </Link>
                 )}
-                {chainId && [ChainId.MOONRIVER].includes(chainId) && (
+                {chainId && [ChainId.MATIC_TESTNET].includes(chainId) && (
                   <Link href={'https://movr.anyswap.exchange/#/bridge'}>
                     <a
                       target="_blank"
@@ -218,7 +218,7 @@ function AppBar(): JSX.Element {
                     </a>
                   </Link>
                 )}
-                {chainId && [ChainId.MOONRIVER].includes(chainId) && (
+                {chainId && [ChainId.MATIC_TESTNET].includes(chainId) && (
                   <Link href={'/nft/launchpad'}>
                     <a className="p-2 text-baseline text-primary hover:text-high-emphesis focus:text-high-emphesis md:p-3 whitespace-nowrap">
                       {i18n._(t`NFT Launchpad`)}

@@ -40,7 +40,8 @@ export const AVERAGE_BLOCK_TIME_IN_SECS = 13
 export const AVERAGE_BLOCK_TIME = {
   [ChainId.ROPSTEN]: AVERAGE_BLOCK_TIME_IN_SECS,  
   [ChainId.MOONRIVER]: 12,  
-  [ChainId.BSC]: 3
+  [ChainId.BSC]: 3,
+  [ChainId.MATIC_TESTNET]: 2, // Changed this
 }
 
 export const ARCHER_RELAY_URI: { [chainId in ChainId]?: string } = {

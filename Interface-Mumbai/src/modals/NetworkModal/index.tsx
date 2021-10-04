@@ -149,6 +149,17 @@ export const SUPPORTED_NETWORKS: {
     rpcUrls: ['https://rpc.moonriver.moonbeam.network','https://moonriver.api.onfinality.io/public'],
     blockExplorerUrls: ['https://blockscout.moonriver.moonbeam.network/'],
   },
+  [ChainId.MATIC_TESTNET]: {
+    chainId: '0x13881', //MAKE SURE THIS IS IN HEXADECIMAL (USE A DECIMAL TO HEXIDECIMAL CONVERTER)
+    chainName: 'Matic Mumbai Testnet',
+    nativeCurrency: {
+      name: 'Matic',
+      symbol: 'MATIC',
+      decimals: 18,
+    },
+    rpcUrls: ['https://rpc-mumbai.maticvigil.com'],
+    blockExplorerUrls: ['https://mumbai.polygonscan.com/'],
+  },
 }
 
 export default function NetworkModal(): JSX.Element | null {
@@ -179,7 +190,8 @@ export default function NetworkModal(): JSX.Element | null {
           // ChainId.HARMONY,
           // ChainId.AVALANCHE,
           // ChainId.CELO,
-          ChainId.MOONRIVER
+          // ChainId.MOONRIVER,
+          ChainId.MATIC_TESTNET,
         ].map((key: ChainId, i: number) => {
           if (chainId === key) {
             return (
