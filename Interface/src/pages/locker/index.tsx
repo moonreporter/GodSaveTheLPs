@@ -10,7 +10,7 @@ import Card from '../../components/Card'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
 import DoubleGlowShadow from '../../components/DoubleGlowShadow'
-import SolarbeamLogo from '../../components/SolarbeamLogo'
+import AppLogo from '../../components/AppLogo'
 import { useTransactionAdder } from '../../state/transactions/hooks'
 import useLocker from '../../features/locker/useLocker'
 import { Disclosure } from '@headlessui/react'
@@ -70,7 +70,7 @@ export default function Locker(): JSX.Element {
         <div className={`mb-2 pb-4 grid grid-cols-12 gap-4`}>
           <div className="flex justify-center items-center col-span-12 lg:justify">
             <Link href="/farm">
-              <SolarbeamLogo />
+              <AppLogo />
             </Link>
           </div>
         </div>

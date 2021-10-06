@@ -15,7 +15,7 @@ import { useLingui } from '@lingui/react'
 import DoubleGlowShadow from '../../components/DoubleGlowShadow'
 import { SOLAR_ADDRESS, AVERAGE_BLOCK_TIME, WNATIVE } from '../../constants'
 import { POOLS } from '../../constants/farms'
-import SolarbeamLogo from '../../components/SolarbeamLogo'
+import AppLogo from '../../components/AppLogo'
 import PriceContext from '../../contexts/priceContext'
 import useMasterChef from '../../features/farm/useMasterChef'
 import { useTransactionAdder } from '../../state/transactions/hooks'
@@ -185,7 +185,7 @@ export default function Farm(): JSX.Element {
         <div className={`mb-2 pb-4 grid grid-cols-12 gap-4`}>
           <div className="flex justify-center items-center col-span-12 lg:justify">
             <Link href="/farm">
-              <SolarbeamLogo />
+              <AppLogo />
             </Link>
           </div>
         </div>

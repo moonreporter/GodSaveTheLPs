@@ -40,7 +40,7 @@ export default function Option({
     >
       <div>
         <div className="flex items-center">
-          {active && <div className="w-4 h-4 mr-4 rounded-full bg-yellow" />}
+          {active && <div className="w-4 h-4 mr-4 rounded-full bg-blue" />}
           {header}
         </div>
         {subheader && <SubHeader>{subheader}</SubHeader>}

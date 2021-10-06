@@ -16,7 +16,7 @@ import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
 import DoubleGlowShadow from '../../../components/DoubleGlowShadow'
 import { LOCKER_ADDRESS } from '../../../constants'
-import SolarbeamLogo from '../../../components/SolarbeamLogo'
+import AppLogo from '../../../components/AppLogo'
 import { useTransactionAdder } from '../../../state/transactions/hooks'
 import Button, { ButtonConfirmed, ButtonError } from '../../../components/Button'
 import NumericalInput from '../../../components/NumericalInput'
@@ -135,7 +135,7 @@ export default function CreateLocker(): JSX.Element {
         <div className={`mb-2 pb-4 grid grid-cols-12 gap-4`}>
           <div className="flex justify-center items-center col-span-12 lg:justify">
             <Link href="/farm">
-              <SolarbeamLogo />
+              <AppLogo />
             </Link>
           </div>
         </div>
