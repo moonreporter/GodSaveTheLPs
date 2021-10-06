@@ -711,7 +711,7 @@ export default function Remove() {
   return (
     <>
       <Head>
-        <title>{i18n._(t`Remove Liquidity`)} | Solarbeam </title>
+        <title>{i18n._(t`Remove Liquidity`)} | Variety.finance </title>
         <meta key="description" name="description" content={i18n._(t`Remove liquidity of Solarbeam`)} />
       </Head>
 

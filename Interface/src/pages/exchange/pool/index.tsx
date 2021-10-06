@@ -95,7 +95,7 @@ export default function Pool() {
   return (
     <>
       <Head>
-        <title>{i18n._(t`Pool`)} | Solarbeam</title>
+        <title>{i18n._(t`Pool`)} | Variety.finance</title>
         <meta
           key="description"
           name="description"
