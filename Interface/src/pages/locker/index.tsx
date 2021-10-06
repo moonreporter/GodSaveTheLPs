@@ -80,7 +80,7 @@ export default function Locker(): JSX.Element {
               <NavLink
                 exact
                 href={'/locker'}
-                activeClassName="font-bold bg-transparent border rounded text-high-emphesis border-transparent border-gradient-r-yellow-dark-900"
+                activeClassName="font-bold bg-transparent border rounded text-high-emphesis border-transparent border-gradient-r-pink-dark-900"
               >
                 <a className="flex items-center justify-between px-6 py-2 text-base font-bold border border-transparent rounded cursor-pointer">
                   {i18n._(t`Search lockers`)}
@@ -89,7 +89,7 @@ export default function Locker(): JSX.Element {
               <NavLink
                 exact
                 href={'/locker/create'}
-                activeClassName="font-bold bg-transparent border rounded text-high-emphesis border-transparent border-gradient-r-yellow-dark-900"
+                activeClassName="font-bold bg-transparent border rounded text-high-emphesis border-transparent border-gradient-r-pink-dark-900"
               >
                 <a className="flex items-center justify-between px-6 py-2 text-base font-bold border border-transparent rounded cursor-pointer">
                   {i18n._(t`Create lock`)}
@@ -104,7 +104,7 @@ export default function Locker(): JSX.Element {
                     <span>
                       No lockers found for this address,{' '}
                       <Link href="/locker/create">
-                        <a className="hover:underline hover:text-yellow">click here</a>
+                        <a className="hover:underline hover:text-pink">click here</a>
                       </Link>{' '}
                       to create one.
                     </span>

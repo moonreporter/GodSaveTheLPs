@@ -19,7 +19,7 @@ const CopyHelper: FC<CopyHelperProps> = ({ className, toCopy, children }) => {
   return (
     <div
       className={classNames(
-        'flex items-center justify-between flex-shrink-0 space-x-1 no-underline cursor-pointer whitespace-nowrap hover:no-underline focus:no-underline active:no-underline text-yellow opacity-80 hover:opacity-100 focus:opacity-100',
+        'flex items-center justify-between flex-shrink-0 space-x-1 no-underline cursor-pointer whitespace-nowrap hover:no-underline focus:no-underline active:no-underline text-pink opacity-80 hover:opacity-100 focus:opacity-100',
         className
       )}
       onClick={() => setCopied(toCopy)}

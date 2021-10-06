@@ -91,7 +91,7 @@ const Transaction: FC<{ hash: string }> = ({ hash }) => {
         </Typography>
         <div
           className={classNames(
-            pending ? 'text-primary' : success ? 'text-yellow' : cancelled ? 'text-red' : 'text-red'
+            pending ? 'text-primary' : success ? 'text-pink' : cancelled ? 'text-red' : 'text-red'
           )}
         >
           {pending ? (

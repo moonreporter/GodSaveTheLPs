@@ -147,11 +147,11 @@ input:focus {
 }
 
 .rdtPicker tfoot {
-  border-top: 1px solid #7b6532 !important;
+  border-top: 1px solid #0099ff !important;
 }
 
 .rdtPicker thead tr:first-child th {
-  border-bottom: 1px solid #7b6532 !important;
+  border-bottom: 1px solid #0099ff !important;
 }
 
 td.rdtMonth:hover, td.rdtYear:hover {

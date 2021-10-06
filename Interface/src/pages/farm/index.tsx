@@ -227,7 +227,7 @@ export default function Farm(): JSX.Element {
                             }
                             setPendingTx(false)
                           }}
-                          className="flex items-center justify-between py-2 text-emphasis underline hover:text-yellow"
+                          className="flex items-center justify-between py-2 text-emphasis underline hover:text-pink"
                         >
                           Harvest All (~ {formatNumberScale(allStaked, true, 2)})
                         </button>

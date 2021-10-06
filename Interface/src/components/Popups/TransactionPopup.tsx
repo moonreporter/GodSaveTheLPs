@@ -30,7 +30,7 @@ export default function TransactionPopup({
     <RowNoFlex style={{ zIndex: 1000 }}>
       <div className="pr-4">
         {success ? (
-          <CheckCircle className="text-2xl text-yellow" />
+          <CheckCircle className="text-2xl text-pink" />
         ) : (
           <AlertCircle className="text-2xl text-red" />
         )}
@@ -41,7 +41,7 @@ export default function TransactionPopup({
         </div>
         {chainId && hash && (
           <ExternalLink
-            className="text-yellow hover:underline p-0 md:p-0"
+            className="text-pink hover:underline p-0 md:p-0"
             href={getExplorerLink(chainId, hash, 'transaction')}
           >
             <div className="flex flex-row items-center gap-1">

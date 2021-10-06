@@ -87,7 +87,7 @@ export default function SwapModalHeader({
             </div>
             <span>{i18n._(t`Price Updated`)}</span>
           </div>
-          <span className="text-sm cursor-pointer text-yellow" onClick={onAcceptChanges}>
+          <span className="text-sm cursor-pointer text-pink" onClick={onAcceptChanges}>
             {i18n._(t`Accept`)}
           </span>
         </div>

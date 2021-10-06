@@ -106,9 +106,9 @@ export default function TransactionSettings({ placeholderSlippage }: Transaction
               !!slippageError
                 ? 'border-red'
                 : tooLow || tooHigh
-                ? 'border-yellow'
+                ? 'border-pink'
                 : userSlippageTolerance !== 'auto'
-                ? 'border-yellow'
+                ? 'border-pink'
                 : 'border-transparent',
               'border p-2 rounded bg-dark-800'
             )}

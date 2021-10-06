@@ -19,7 +19,7 @@ const FILLED = {
   'light-green':
     'bg-purple bg-opacity-80 w-full rounded text-dark-900 hover:bg-opacity-100 disabled:bg-opacity-80',
   gradient:
-    'w-full text-high-emphesis bg-gradient-to-r from-opaque-yellow to-opaque-yellow opacity-80 hover:opacity-100 disabled:bg-opacity-80',
+    'w-full text-high-emphesis bg-gradient-to-r from-opaque-blue to-opaque-pink opacity-80 hover:opacity-100 disabled:bg-opacity-80',
 }
 
 const OUTLINED = {
@@ -30,9 +30,9 @@ const OUTLINED = {
   gray: 'bg-dark-700 bg-opacity-20 outline-gray rounded text-gray hover:bg-opacity-40 disabled:bg-opacity-20',
   green: 'bg-green bg-opacity-20 border border-green rounded text-green hover:bg-opacity-40 disabled:bg-opacity-20',
   'light-green':
-    'bg-purple bg-opacity-20 border border-yellow rounded text-yellow hover:bg-opacity-40 disabled:bg-opacity-20',
+    'bg-purple bg-opacity-20 border border-yellow rounded text-pink hover:bg-opacity-40 disabled:bg-opacity-20',
   gradient:
-    'border border-transparent border-gradient-r-yellow-dark-900 opacity-80 hover:opacity-100 disabled:bg-opacity-100 disabled:border-dark-800 disabled:bg-none disabled:bg-dark-700',
+    'border border-transparent border-gradient-r-pink-dark-900 opacity-80 hover:opacity-100 disabled:bg-opacity-100 disabled:border-dark-800 disabled:bg-none disabled:bg-dark-700',
 }
 
 const EMPTY = {
@@ -44,7 +44,7 @@ const LINK = {
   default: 'text-primary hover:text-high-emphesis focus:text-high-emphesis whitespace-nowrap focus:ring-0',
   blue: 'text-blue text-opacity-80 hover:text-opacity-100 focus:text-opacity-100 whitespace-nowrap focus:ring-0',
   'light-green':
-    'text-yellow text-opacity-80 hover:text-opacity-100 focus:text-opacity-100 whitespace-nowrap focus:ring-0',
+    'text-pink text-opacity-80 hover:text-opacity-100 focus:text-opacity-100 whitespace-nowrap focus:ring-0',
 }
 
 const VARIANT = {

@@ -30,7 +30,7 @@ export default function TransactionList({ transactions }) {
             </a>
           )}
           <div className="ml-4 mr-1">
-            <CheckCircle strokeWidth={2} size={18} className="text-yellow" />
+            <CheckCircle strokeWidth={2} size={18} className="text-pink" />
           </div>
         </div>
       ))}
