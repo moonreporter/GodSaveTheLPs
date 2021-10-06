@@ -9,7 +9,7 @@ const AppLogo = () => {
     <>
       <div className="mt-4 mb-4 sm:hidden"></div>
       <div className="flex justify items-center mt-8 mb-12 hidden sm:block" style={{ minHeight: 40 }}>
-        <Image src="/logo.png" alt="Variety" width={170} height={62} />
+        <Image src="/logo.png" alt="Variety" width={255} height={93} />
       </div>
     </>
   )
