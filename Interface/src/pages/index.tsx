@@ -4,7 +4,7 @@ export default function Dashboard() {
   return (
     <>
       <Head>
-        <title>Home | Solarbeam</title>
+        <title>Home | Variety.finance</title>
         <meta name="description" content="Solarbeam" />
       </Head>
     </>

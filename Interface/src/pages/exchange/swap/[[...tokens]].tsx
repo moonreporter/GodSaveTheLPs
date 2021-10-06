@@ -366,7 +366,7 @@ export default function Swap() {
   return (
     <>
       <Head>
-        <title>{i18n._(t`Solarbeam`)}</title>
+        <title>{i18n._(t`Variety.finance`)}</title>
         <meta
           key="description"
           name="description"

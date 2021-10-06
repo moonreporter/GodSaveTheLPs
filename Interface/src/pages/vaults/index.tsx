@@ -131,7 +131,7 @@ export default function Vault(): JSX.Element {
   return (
     <>
       <Head>
-        <title>Vaults | Solarbeam</title>
+        <title>Vaults | Variety.finance</title>
         <meta key="description" name="description" content="Solar Vaults" />
       </Head>
 

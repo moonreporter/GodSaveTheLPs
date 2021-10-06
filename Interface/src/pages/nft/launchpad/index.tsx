@@ -10,7 +10,7 @@ export default function NFTLaunchpad(): JSX.Element {
   return (
     <>
       <Head>
-        <title>NFT Launchpad | Solarbeam</title>
+        <title>NFT Launchpad | Variety.finance</title>
         <meta key="description" name="description" content="NFT Launchpad" />
       </Head>
 

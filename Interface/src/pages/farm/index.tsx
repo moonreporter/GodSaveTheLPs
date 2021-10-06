@@ -177,7 +177,7 @@ export default function Farm(): JSX.Element {
   return (
     <>
       <Head>
-        <title>Farm | Solarbeam</title>
+        <title>Farm | Variety.finance</title>
         <meta key="description" name="description" content="Farm SOLAR" />
       </Head>
 

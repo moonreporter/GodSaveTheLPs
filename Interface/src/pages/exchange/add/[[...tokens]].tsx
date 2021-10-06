@@ -320,7 +320,7 @@ export default function Add() {
   return (
     <>
       <Head>
-        <title>{i18n._(t`Add Liquidity`)} | Solarbeam</title>
+        <title>{i18n._(t`Add Liquidity`)} | Variety.finance</title>
         <meta
           key="description"
           name="description"
