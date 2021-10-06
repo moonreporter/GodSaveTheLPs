@@ -54,46 +54,6 @@ function AppBar(): JSX.Element {
                           </a>
                         </NavLink>
                       )}
-                      {chainId && [ChainId.MATIC_TESTNET].includes(chainId) && (
-                        <NavLink href={'/vaults'}>
-                          <a
-                            id={`vaults-nav-link`}
-                            className="p-2 text-lg text-primary hover:text-high-emphesis focus:text-high-emphesis md:p-3 whitespace-nowrap"
-                          >
-                            {i18n._(t`Vaults`)}
-                          </a>
-                        </NavLink>
-                      )}
-                      {chainId && [ChainId.MATIC_TESTNET].includes(chainId) && (
-                        <NavLink href={'/locker'}>
-                          <a
-                            id={`farm-nav-link`}
-                            className="p-2 text-lg text-primary hover:text-high-emphesis focus:text-high-emphesis md:p-3 whitespace-nowrap"
-                          >
-                            {i18n._(t`Locker`)}
-                          </a>
-                        </NavLink>
-                      )}
-                      {chainId && [ChainId.MATIC_TESTNET].includes(chainId) && (
-                        <NavLink href={'https://movr.anyswap.exchange/#/bridge'}>
-                          <a
-                            target="_blank"
-                            className="p-2 text-lg text-primary hover:text-high-emphesis focus:text-high-emphesis md:p-3 whitespace-nowrap"
-                          >
-                            {i18n._(t`Bridge`)}
-                          </a>
-                        </NavLink>
-                      )}
-                      {chainId && [ChainId.MATIC_TESTNET].includes(chainId) && (
-                        <NavLink href={'/nft/launchpad'}>
-                          <a
-                            id={`nft-nav-link`}
-                            className="p-2 text-lg text-primary hover:text-high-emphesis focus:text-high-emphesis md:p-3 whitespace-nowrap"
-                          >
-                            {i18n._(t`NFT Launchpad`)}
-                          </a>
-                        </NavLink>
-                      )}
                     </div>
                   </div>
                 </div>
@@ -177,7 +137,6 @@ function AppBar(): JSX.Element {
                     {i18n._(t`Pool`)}
                   </a>
                 </Link>
-
                 {chainId && [ChainId.MATIC_TESTNET].includes(chainId) && (
                   <Link href={'/farm'}>
                     <a
@@ -185,43 +144,6 @@ function AppBar(): JSX.Element {
                       className="p-2 text-baseline text-primary hover:text-high-emphesis focus:text-high-emphesis md:p-3 whitespace-nowrap"
                     >
                       {i18n._(t`Farm`)}
-                    </a>
-                  </Link>
-                )}
-                {chainId && [ChainId.MATIC_TESTNET].includes(chainId) && (
-                  <Link href={'/vaults'}>
-                    <a
-                      id={`vaults-nav-link`}
-                      className="p-2 text-baseline text-primary hover:text-high-emphesis focus:text-high-emphesis md:p-3 whitespace-nowrap"
-                    >
-                      {i18n._(t`Vaults`)}
-                    </a>
-                  </Link>
-                )}
-                {chainId && [ChainId.MATIC_TESTNET].includes(chainId) && (
-                  <Link href={'/locker'}>
-                    <a
-                      id={`farm-nav-link`}
-                      className="p-2 text-baseline text-primary hover:text-high-emphesis focus:text-high-emphesis md:p-3 whitespace-nowrap"
-                    >
-                      {i18n._(t`Locker`)}
-                    </a>
-                  </Link>
-                )}
-                {chainId && [ChainId.MATIC_TESTNET].includes(chainId) && (
-                  <Link href={'https://movr.anyswap.exchange/#/bridge'}>
-                    <a
-                      target="_blank"
-                      className="p-2 text-baseline text-primary hover:text-high-emphesis focus:text-high-emphesis md:p-3 whitespace-nowrap"
-                    >
-                      {i18n._(t`Bridge`)}
-                    </a>
-                  </Link>
-                )}
-                {chainId && [ChainId.MATIC_TESTNET].includes(chainId) && (
-                  <Link href={'/nft/launchpad'}>
-                    <a className="p-2 text-baseline text-primary hover:text-high-emphesis focus:text-high-emphesis md:p-3 whitespace-nowrap">
-                      {i18n._(t`NFT Launchpad`)}
                     </a>
                   </Link>
                 )}
