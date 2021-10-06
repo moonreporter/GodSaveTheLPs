@@ -5,7 +5,7 @@ const DoubleGlowShadow = ({ maxWidth = true, opacity = '1', children }) => {
         style={{
           filter: `blur(150px) opacity(${opacity})`,
         }}
-        className="absolute top-1/4 -left-1 bg-blue bottom-4 w-3/5 rounded-full z-0 hidden sm:block"
+        className="absolute top-1/4 -left-1 bg-cyan-blue bottom-4 w-3/5 rounded-full z-0 hidden sm:block"
       />
       <div
         style={{
