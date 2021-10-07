@@ -116,7 +116,7 @@ export default function TokenStatsModal({ token }: { token: any }) {
             )}
             <div className="flex flex-1 flex-col">
               <div className="flex flex-row items-center px-3">
-                <div className="text-primary text-2xl">{token['symbol']}</div>
+                <div className="text-primary text-2xl">VAR</div> {/ Unable to find how to switch easily so keep documented to replace VAR in future {token['symbol']} /}
               </div>
               <div className="flex items-center justify-between space-x-3 gap-2">
                 {token.address && (
