@@ -108,7 +108,7 @@ const CurrencyLogo: FunctionComponent<CurrencyLogoProps> = ({
     if (!currency) {
       return [unknown]
     }
-    if (currency?.symbol == 'SOLAR') {
+    if (currency?.symbol == 'VAR') {
       return [solar]
     }
     if (currency.isNative || currency.equals(WNATIVE[currency.chainId])) {

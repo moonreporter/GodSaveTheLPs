@@ -61,8 +61,8 @@ export default function Vault(): JSX.Element {
         ((pool.allocPoint / distributorInfo.totalAllocPoint) * distributorInfo.solarPerBlock) / 1e18
 
       const defaultReward = {
-        token: 'SOLAR',
-        icon: '/images/token/solar.png',
+        token: 'Var',
+        icon: '/images/token/var.png',
         rewardPerBlock,
         rewardPerDay: rewardPerBlock * blocksPerDay,
         rewardPrice: solarPrice,

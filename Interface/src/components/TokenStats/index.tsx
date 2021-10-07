@@ -14,9 +14,9 @@ const supportedTokens = {
     icon: '/images/tokens/movr.png',
   },
   SOLAR: {
-    name: 'Solarbeam Token',
+    name: 'Var (Variety) Token',
     symbol: 'SOLAR',
-    icon: '/images/tokens/solar.png',
+    icon: '/images/tokens/var.png',
     address: {
       [ChainId.MATIC_TESTNET]: '0x740bBb10512409d52b1e861189AF79236aeC5201',
       //Can include other chains

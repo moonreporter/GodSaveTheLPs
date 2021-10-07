@@ -74,7 +74,7 @@ export default function Farm(): JSX.Element {
         ((pool.allocPoint / distributorInfo.totalAllocPoint) * distributorInfo.solarPerBlock) / 1e18
 
       const defaultReward = {
-        token: 'SOLAR',
+        token: 'Var',
         icon: '/images/token/solar.png',
         rewardPerBlock,
         rewardPerDay: rewardPerBlock * blocksPerDay,

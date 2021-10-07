@@ -11,21 +11,33 @@ import NavLink from '../NavLink'
 
 const items = (i18n: I18n) => [
   {
+    name: i18n._(t`About Variety Finance`),
+    description: i18n._(t`Read our whitepaper and roadmap.`),
+    href: 'https://github.com/placeholder',
+    external: true,
+  },
+  {
+    name: i18n._(t`Discord`),
+    description: i18n._(t`Join the community on Discord.`),
+    href: 'https://discord.com/channels/placeholder',
+    external: true,
+  },
+  {
     name: i18n._(t`Telegram`),
     description: i18n._(t`Join the community on Telegram.`),
-    href: 'https://t.me/solarbeamio',
+    href: 'https://t.me/placeholder',
     external: true,
   },
   {
     name: i18n._(t`Twitter`),
     description: i18n._(t`Follow us on Twitter.`),
-    href: 'https://twitter.com/solarbeamio',
+    href: 'https://twitter.com/placeholder',
     external: true,
   },
   {
     name: i18n._(t`Github`),
     description: i18n._(t`We're supporters of Open Source.`),
-    href: 'https://github.com/solarbeamio',
+    href: 'https://github.com/placeholder',
     external: true,
   },
 ]
