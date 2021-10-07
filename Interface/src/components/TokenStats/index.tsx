@@ -15,7 +15,7 @@ const supportedTokens = {
   },
   SOLAR: {
     name: 'Var (Variety) Token',
-    symbol: 'SOLAR',
+    symbol: 'SOLAR', //<-- This changes both the text and the backend connection to pricing
     icon: '/images/tokens/var.png',
     address: {
       [ChainId.MATIC_TESTNET]: '0x740bBb10512409d52b1e861189AF79236aeC5201',
