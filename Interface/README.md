@@ -4,9 +4,11 @@ Uniswap/SushiSwap Clone on Polygon (Matic) Mumbai Testnet
 ## Quickstart
 To start developing your application run "yarn dev". This starts the development server on http://localhost:3000.
 
-## Deployed Variety Contracts Configuration
+## Deployed Configuration
 Configured for Polygon (Matic) Mumbai Testnet.
 
+## Deployed prototype contract location
+https://mumbai.polygonscan.com/
 * "VarietyForwarder": 0x262A73Ae4376a4D142A897c5E8148fd5F537EEb2
 * "Multicall2": 0x4707E34f2A2F4fD9D07fC58b9EcBfbB385055474
 * "Timelock": 0x3d9f3187C98032579eaCd4AaB52997db95f91407
@@ -16,8 +18,7 @@ Configured for Polygon (Matic) Mumbai Testnet.
 * "VarietyLocker": 0x8140F757b0F9bA25EFEf2098dF162CF0116e731a
 * "VarietyRouter02": 0xC8B5F12F45B53B83915ae6a0588Ae7EDF1529F25
 
-## Deployed contract location
-https://mumbai.polygonscan.com/
+## Deployed Uniswap V2 clone contract location
 * "solarForwarder": 0xC8de2C820818a347a56e0382e02Bc58Ccf296Af8
 * "Multicall2": 0x5625b03De42553340E70CaD2fFED8ef581F449Bc
 * "SolarBeamToken": 0x740bBb10512409d52b1e861189AF79236aeC5201
