@@ -8,7 +8,7 @@
       },
       {
         "internalType": "uint256",
-        "name": "_solarPerBlock",
+        "name": "_VarietyPerBlock",
         "type": "uint256"
       }
     ],
@@ -689,7 +689,7 @@
   },
   {
     "inputs": [],
-    "name": "solarPerBlock",
+    "name": "VarietyPerBlock",
     "outputs": [
       {
         "internalType": "uint256",
@@ -812,7 +812,7 @@
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "_solarPerBlock",
+        "name": "_VarietyPerBlock",
         "type": "uint256"
       }
     ],

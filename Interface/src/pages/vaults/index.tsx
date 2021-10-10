@@ -58,7 +58,7 @@ export default function Vault(): JSX.Element {
 
     function getRewards() {
       const rewardPerBlock =
-        ((pool.allocPoint / distributorInfo.totalAllocPoint) * distributorInfo.solarPerBlock) / 1e18
+        ((pool.allocPoint / distributorInfo.totalAllocPoint) * distributorInfo.VarietyPerBlock) / 1e18
 
       const defaultReward = {
         token: 'Var',

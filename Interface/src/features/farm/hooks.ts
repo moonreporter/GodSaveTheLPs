@@ -306,13 +306,13 @@ export function useBNBPrice() {
 }
 
 export function useSolarDistributorInfo(contract) {
-  const solarPerBlock = useSingleCallResult(contract ? contract : null, 'solarPerBlock', undefined, NEVER_RELOAD)
+  const VarietyPerBlock = useSingleCallResult(contract ? contract : null, 'VarietyPerBlock', undefined, NEVER_RELOAD)
     ?.result?.[0]
 
   const totalAllocPoint = useSingleCallResult(contract ? contract : null, 'totalAllocPoint', undefined, NEVER_RELOAD)
     ?.result?.[0]
 
-  return useMemo(() => ({ solarPerBlock, totalAllocPoint }), [solarPerBlock, totalAllocPoint])
+  return useMemo(() => ({ VarietyPerBlock, totalAllocPoint }), [VarietyPerBlock, totalAllocPoint])
 }
 
 export function useDistributorInfo() {

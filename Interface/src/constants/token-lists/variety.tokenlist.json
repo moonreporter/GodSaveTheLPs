@@ -1,5 +1,5 @@
 {
-  "name": "Solarbeam List",
+  "name": "SolarBeam List",
   "timestamp": "2021-07-15T12:15:29.993Z",
   "version": {
     "major": 1,
@@ -14,12 +14,12 @@
   ],
   "tokens": [
     {
-      "name": "Solarbeam Token",
-      "address": "0x740bbb10512409d52b1e861189af79236aec5201",
-      "symbol": "SOLAR",
+      "name": "Variety Token",
+      "address": "0x8Dd5d27874D877666193251756334b9291ED114F",
+      "symbol": "VAR",
       "decimals": 18,
       "chainId": 80001,
-      "logoURI": "http://solarbeam.io/icon.png"
+      "logoURI": "https://raw.githubusercontent.com/moonreporter/GodSaveTheLPs/3121f24fc5bb18ff97e759eb4d9c99850495e642/Interface/public/images/tokens/var.png"
     },
     {
       "name": "Wrapped MATIC",
@@ -27,7 +27,7 @@
       "symbol": "WMATIC",
       "decimals": 18,
       "chainId": 80001,
-      "logoURI": "https://solarbeam.io/images/tokens/matic.png"
+      "logoURI": "https://raw.githubusercontent.com/moonreporter/GodSaveTheLPs/3121f24fc5bb18ff97e759eb4d9c99850495e642/Interface/public/images/tokens/polygon-square.jpg"
     },
     {
       "name": "USDC Test Coin",
@@ -35,7 +35,7 @@
       "symbol": "USDCt",
       "decimals": 18,
       "chainId": 80001,
-      "logoURI": "https://solarbeam.io/images/tokens/usdc.png"
+      "logoURI": "https://raw.githubusercontent.com/moonreporter/GodSaveTheLPs/main/Interface/public/images/tokens/usdc.png"
     },
     {
       "name": "SHIBA INU Test Token",
@@ -43,7 +43,7 @@
       "symbol": "SHIBt",
       "decimals": 18,
       "chainId": 80001,
-      "logoURI": "https://solarbeam.io/images/tokens/movr.png"
+      "logoURI": "/images/tokens/movr.png"
     }
   ]
 }

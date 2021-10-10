@@ -26,9 +26,9 @@ export const VAULTS: AddressMap = {
   [ChainId.MATIC_TESTNET]: {
     '0': {
       id: 0,
-      lpToken: '0x740bBb10512409d52b1e861189AF79236aeC5201', // Changed this
+      lpToken: '0x8Dd5d27874D877666193251756334b9291ED114F', // Changed this
       token0: {
-        id: '0x740bBb10512409d52b1e861189AF79236aeC5201', // Changed this
+        id: '0x8Dd5d27874D877666193251756334b9291ED114F', // Changed this
         name: 'Solarbeam',
         symbol: 'SOLAR',
         decimals: 18,
@@ -36,9 +36,9 @@ export const VAULTS: AddressMap = {
     },
     '1': {
       id: 1,
-      lpToken: '0x740bBb10512409d52b1e861189AF79236aeC5201', // Changed this
+      lpToken: '0x8Dd5d27874D877666193251756334b9291ED114F', // Changed this
       token0: {
-        id: '0x740bBb10512409d52b1e861189AF79236aeC5201', // Changed this
+        id: '0x8Dd5d27874D877666193251756334b9291ED114F', // Changed this
         name: 'Solarbeam',
         symbol: 'SOLAR',
         decimals: 18,
@@ -46,9 +46,9 @@ export const VAULTS: AddressMap = {
     },
     '2': {
       id: 2,
-      lpToken: '0x740bBb10512409d52b1e861189AF79236aeC5201', // Changed this
+      lpToken: '0x8Dd5d27874D877666193251756334b9291ED114F', // Changed this
       token0: {
-        id: '0x740bBb10512409d52b1e861189AF79236aeC5201', // Changed this
+        id: '0x8Dd5d27874D877666193251756334b9291ED114F', // Changed this
         name: 'Solarbeam',
         symbol: 'SOLAR',
         decimals: 18,

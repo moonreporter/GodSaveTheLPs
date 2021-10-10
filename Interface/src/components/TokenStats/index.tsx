@@ -9,16 +9,16 @@ import PriceContext from '../../contexts/priceContext'
 
 const supportedTokens = {
   MOVR: {
-    name: 'Moonriver',
-    symbol: 'MOVR',
-    icon: '/images/tokens/movr.png',
+    name: 'Polygon Matic',
+    symbol: 'MATIC',
+    icon: '/images/tokens/matic.png',
   },
   SOLAR: {
     name: 'Var (Variety) Token',
     symbol: 'SOLAR', //<-- This changes both the text and the backend connection to pricing
     icon: '/images/tokens/var.png',
     address: {
-      [ChainId.MATIC_TESTNET]: '0x740bBb10512409d52b1e861189AF79236aeC5201',
+      [ChainId.MATIC_TESTNET]: '0x8Dd5d27874D877666193251756334b9291ED114F',
       //Can include other chains
     }
   },

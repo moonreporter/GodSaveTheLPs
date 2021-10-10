@@ -308,7 +308,7 @@ export const FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.FANTOM]: '',
   [ChainId.FANTOM_TESTNET]: '',
   [ChainId.MATIC]: '',
-  [ChainId.MATIC_TESTNET]: '0x1fA9a2f390C901df7023Ad652C361b6FA5124eA1',
+  [ChainId.MATIC_TESTNET]: '0xB9946BB88497377dff65fDD687E5467ee2a922a0',
   [ChainId.XDAI]: '',
   [ChainId.BSC]: '',
   [ChainId.BSC_TESTNET]: '',
@@ -338,7 +338,7 @@ export const ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.FANTOM]: '',
   [ChainId.FANTOM_TESTNET]: '',
   [ChainId.MATIC]: '',
-  [ChainId.MATIC_TESTNET]: '0x3559162F3A8210A0002a5f377a53De1FF3a2aDA7',
+  [ChainId.MATIC_TESTNET]: '0xC8B5F12F45B53B83915ae6a0588Ae7EDF1529F25',
   [ChainId.XDAI]: '',
   [ChainId.BSC]: '',
   [ChainId.BSC_TESTNET]: '',
@@ -360,4 +360,4 @@ export const ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
 }
 
 
-export const INIT_CODE_HASH: string = '0x9f30791aa802549da35f73a566440dfdab89ca65b048f34b3563c82a75376a98' // Changed this
+export const INIT_CODE_HASH: string = '0x3d399fc9c15117cad3a9f0dacb41f027f5eabbe6ec2956180c2c417b239badb3' // Changed this

@@ -91,7 +91,7 @@ interface CurrencyLogoProps {
 }
 
 const unknown = 'https://raw.githubusercontent.com/sushiswap/icons/master/token/unknown.png'
-const solar = 'https://solarbeam.io/icon.png'
+const solar = 'https://variety.finance/icon.png'
 
 const CurrencyLogo: FunctionComponent<CurrencyLogoProps> = ({
   currency,

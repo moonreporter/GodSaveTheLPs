@@ -18,7 +18,7 @@ module.exports = withBundleAnalyzer(
       disable: true,
     },
     images: {
-      domains: ['solarbeam.io', 'res.cloudinary.com', 'raw.githubusercontent.com', 'logos.covalenthq.com'],
+      domains: ['variety.finance', 'res.cloudinary.com', 'raw.githubusercontent.com', 'logos.covalenthq.com', 'github.com'],
     },
     reactStrictMode: true,
     i18n: {

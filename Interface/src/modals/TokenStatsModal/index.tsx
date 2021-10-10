@@ -116,13 +116,13 @@ export default function TokenStatsModal({ token }: { token: any }) {
             )}
             <div className="flex flex-1 flex-col">
               <div className="flex flex-row items-center px-3">
-                <div className="text-primary text-2xl">VAR</div> {/* Unable to find how to switch easily so keep documented to replace VAR in future {token['symbol']} */}
+                <div className="text-primary text-2xl">{token['symbol']}</div> {/* Unable to find how to switch easily so keep documented to replace VAR in future {token['symbol']} */}
               </div>
               <div className="flex items-center justify-between space-x-3 gap-2">
                 {token.address && (
                   <ExternalLink
                     href={
-                      'https://mumbai.polygonscan.com/token/0x740bBb10512409d52b1e861189AF79236aeC5201'
+                      'https://mumbai.polygonscan.com/token/0x8Dd5d27874D877666193251756334b9291ED114F'
                     }
                     className="px-3 ring-0 ring-transparent ring-opacity-0"
                     color="light-green"

@@ -59,7 +59,7 @@ export const MOONRIVER: { [key: string]: Token } = {
 
 export const MATIC_TESTNET: { [key: string]: Token } = {
   USDC: new Token(ChainId.MATIC_TESTNET, '0x0636617c67CB84D49C1417F641629Db7d8c065BA', 18, 'USDC', 'USD Test Coin'),
-  SOLAR: new Token(ChainId.MATIC_TESTNET, '0x740bBb10512409d52b1e861189AF79236aeC5201', 18, 'SOLAR', 'Solarbeam Token'),
+  SOLAR: new Token(ChainId.MATIC_TESTNET, '0x8Dd5d27874D877666193251756334b9291ED114F', 18, 'VAR', 'Variety Token'),
 }
 
 export const HECO: { [key: string]: Token } = {
@@ -206,7 +206,7 @@ export const SOLAR_ADDRESS = {
   [ChainId.FANTOM]: '',
   [ChainId.FANTOM_TESTNET]: '',
   [ChainId.MATIC]: '',
-  [ChainId.MATIC_TESTNET]: '0x740bBb10512409d52b1e861189AF79236aeC5201', // Changed this
+  [ChainId.MATIC_TESTNET]: '0x8Dd5d27874D877666193251756334b9291ED114F', // Changed this
   [ChainId.XDAI]: '',
   [ChainId.BSC]: '',
   [ChainId.BSC_TESTNET]: '',

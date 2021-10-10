@@ -4,7 +4,7 @@ import pairAbi from '../../constants/abis/uniswap-v2-pair.json'
 import { POOLS } from '../../constants/farms'
 import { ChainId } from '../../sdk'
 
-const NETWORK_URL = 'https://rpc-mumbai.matic.today'
+const NETWORK_URL = 'https://polygon-mumbai.g.alchemy.com/v2/NR4BiquJS_8Db9qDj8rGXgWEGMTRitXQ'
 const web3 = new Web3(NETWORK_URL)
 
 export default async function handler(req, res) {
@@ -16,7 +16,7 @@ let farmsResult = null
 
 export async function farms() {
   if (!farmsResult) {
-    let distributorContract = new web3.eth.Contract(distributorAbi, '0x1cB2B70196F107845f479bDB3A8CF0EFe64E6616')
+    let distributorContract = new web3.eth.Contract(distributorAbi, '0x72502B004817aAf94937b580EE65b2DFED2c7cd4')
     const poolLength = await distributorContract.methods.poolLength().call()
 
     const forHelper = []
@@ -58,7 +58,7 @@ export async function farms() {
           lpContract.methods.totalSupply().call(),
           lpContract.methods.token0().call(),
           lpContract.methods.token1().call(),
-          lpContract.methods.balanceOf('0x1cB2B70196F107845f479bDB3A8CF0EFe64E6616').call(), // Distributor contract address
+          lpContract.methods.balanceOf('0x72502B004817aAf94937b580EE65b2DFED2c7cd4').call(), // Distributor contract address
         ]
 
         const [reserves, totalSupply, token0, token1, distributorBalance] = await Promise.all(promisesCall)
@@ -80,7 +80,9 @@ export async function farms() {
         ret.push({
           address: web3.utils.toChecksumAddress(pool.lpToken),
           baseSymbol:
-            token0info.symbol == 'SOLAR' || token1info.symbol == 'SOLAR'
+              token0info.symbol == 'VAR' || token1info.symbol == 'VAR'
+              ? 'var'
+              :token0info.symbol == 'SOLAR' || token1info.symbol == 'SOLAR'
               ? 'solar'
               : token0info.symbol == 'MOVR' || token1info.symbol == 'MOVR'
               ? 'movr'
@@ -88,7 +90,9 @@ export async function farms() {
               ? 'usdc'
               : '',
           baseAmount:
-            token0info.symbol == 'SOLAR' || token0info.symbol == 'MOVR'
+              token0info.symbol == 'VAR' || token1info.symbol == 'VAR'
+              ? token0amount
+              :token0info.symbol == 'SOLAR' || token0info.symbol == 'MOVR'
               ? token0amount
               : token1info.symbol == 'SOLAR' || token1info.symbol == 'MOVR'
               ? token1amount

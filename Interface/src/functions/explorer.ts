@@ -44,6 +44,19 @@ const builders = {
     }
   },
 
+  matic_testnet: (chainName: string, data: string, type: 'transaction' | 'token' | 'address' | 'block') => {
+    // const prefix = `https://explorer-${chainName}.maticvigil.com`
+    const prefix = 'https://mumbai.polygonscan.com'
+    switch (type) {
+      case 'transaction':
+        return `${prefix}/tx/${data}`
+      case 'token':
+        return `${prefix}/tokens/${data}`
+      default:
+        return `${prefix}/${type}/${data}`
+    }
+  },
+
   matic: (chainName: string, data: string, type: 'transaction' | 'token' | 'address' | 'block') => {
     // const prefix = `https://explorer-${chainName}.maticvigil.com`
     const prefix = 'https://polygonscan.com'
@@ -213,7 +226,7 @@ const chains: ChainObject = {
   },
   [ChainId.MATIC_TESTNET]: {
     chainName: 'mumbai',
-    builder: builders.matic,
+    builder: builders.matic_testnet,
   },
   [ChainId.FANTOM]: {
     chainName: '',

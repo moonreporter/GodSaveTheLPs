@@ -23,29 +23,12 @@ type AddressMap = {
 
 export const POOLS: AddressMap = {
   [ChainId.MATIC_TESTNET]: {
-    '0x56935b828d7D3D1D14C87919B860639A61a4dFd0': {
+    '0x58B3751EEFF46Cd7e5a765f16a42C5e63F6BB344': {
       id: 0,
       token0: {
-        id: '0x740bBb10512409d52b1e861189AF79236aeC5201',
-        name: 'Solarbeam',
-        symbol: 'SOLAR',
-        decimals: 18,
-      },
-      token1: {
-        id: '0x9c3c9283d3e44854697cd22d3faa240cfb032889',
-        name: 'Wrapped MATIC',
-        symbol: 'WMATIC',
-        decimals: 18,
-      },
-      name: 'Solarbeam LP',
-      symbol: 'SLP',
-    },
-    '0x0b3e28Dc53d9E8E870014b36aF54FF9CF45De7Ab': {
-      id: 1,
-      token0: {
-        id: '0x740bBb10512409d52b1e861189AF79236aeC5201',
-        name: 'Solarbeam',
-        symbol: 'SOLAR',
+        id: '0x8Dd5d27874D877666193251756334b9291ED114F',
+        name: 'Variety Token',
+        symbol: 'VAR',
         decimals: 18,
       },
       token1: {
@@ -54,8 +37,51 @@ export const POOLS: AddressMap = {
         symbol: 'USDCt',
         decimals: 18,
       },
-      name: 'Solarbeam LP',
+      name: 'Variety LP',
       symbol: 'SLP',
+    },
+    '0x6a09c284e56771633255B8719281b9Fb5bF7Ce18': {
+      id: 1,
+      token0: {
+        id: '0x8Dd5d27874D877666193251756334b9291ED114F',
+        name: 'Variety Token',
+        symbol: 'VAR',
+        decimals: 18,
+      },
+      token1: {
+        id: '0xD7C5BB823bB5E4D6581605B057c92486D1f5CE6a',
+        name: 'Shiba Inu Test Coin',
+        symbol: 'SHIBt',
+        decimals: 18,
+      },
+      name: 'Variety LP',
+      symbol: 'SLP',
+    },
+    '0x382308715962270BA8B9C1beB143891C1Fb7717a': {
+      id: 2,
+      token0: {
+        id: '0x8Dd5d27874D877666193251756334b9291ED114F',
+        name: 'Variety Token',
+        symbol: 'VAR',
+        decimals: 18,
+      },
+      token1: {
+        id: '0x9c3C9283D3e44854697Cd22D3Faa240Cfb032889',
+        name: 'Wrapped Matic',
+        symbol: 'WMATIC',
+        decimals: 18,
+      },
+      name: 'Variety LP',
+      symbol: 'SLP',
+    },
+    '0x8Dd5d27874D877666193251756334b9291ED114F': {
+      id: 3,
+      token0: {
+        id: '0x8Dd5d27874D877666193251756334b9291ED114F',
+        name: 'Variety Token',
+        symbol: 'VAR',
+        decimals: 18,
+      },
     },
   },
 }

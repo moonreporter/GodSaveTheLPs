@@ -1,5 +1,5 @@
 import { AppState } from '..'
-import DEFAULT_TOKEN_LIST from '../../constants/token-lists/solarbeam.tokenlist.json'
+import DEFAULT_TOKEN_LIST from '../../constants/token-lists/variety.tokenlist.json'
 import { TokenList } from '@uniswap/token-lists'
 import { UNSUPPORTED_LIST_URLS } from '../../constants/token-lists'
 import { WrappedTokenInfo } from './wrappedTokenInfo'
