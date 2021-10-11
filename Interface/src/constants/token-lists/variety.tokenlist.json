@@ -43,7 +43,7 @@
       "symbol": "SHIBt",
       "decimals": 18,
       "chainId": 80001,
-      "logoURI": "/images/tokens/movr.png"
+      "logoURI": "https://raw.githubusercontent.com/moonreporter/GodSaveTheLPs/main/Interface/public/images/tokens/shib.png"
     }
   ]
 }
