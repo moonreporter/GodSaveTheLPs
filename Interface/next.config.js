@@ -28,6 +28,11 @@ module.exports = withBundleAnalyzer(
     async redirects() {
       return [
         {
+          source: '/savings',
+          destination: 'https://varietysavings.bubbleapps.io/',
+          permanent: true,
+        },
+        {
           source: '/',
           destination: '/exchange/swap',
           permanent: true,
